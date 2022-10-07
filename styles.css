@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Gemunu+Libre:wght@200&family=Source+Sans+Pro:wght@200&display=swap');
+body {
+  background-color: rgb(30, 68, 84);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 65.5%;
+}
+
+.title{
+    text-align: center;
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 1px 5px 10px rgb(103, 188, 207);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border: 10px solid #ccc;
+  font-size: 2rem;
+  border-radius: 5%;
+
+}
+
+.calculator-display {
+  background-color: rgb(255, 255, 255);
+  padding: 25px 15px;
+  width: 100%;
+  text-align: right;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  
+}
+
+.calculator-keypad {
+  display: flex;
+  width: 100%;
+  background-color: #ccc;
+  
+}
+
+.keypad-number {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.keypad-button {
+  width: 25%;
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffff;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+}
+
+.keypad-button:hover {
+  filter: brightness(80%);
+  transition: filter 0.25s;
+}
+
+.keypad-button.yellow {
+  background-color: yellow;
+}
+.keypad-button.large {
+  width: 50%;
+}
+
+.keypad-button.dark {
+  background-color: rgb(103, 188, 207);
+}
